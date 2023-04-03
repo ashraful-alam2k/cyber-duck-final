@@ -24,7 +24,7 @@ Let’s configure our AWS credentials
     ```
     aws configure
     ```
-![AWS configure](https://drive.google.com/file/d/1zfoIc7x_rMBtRQoGY7VWF2C4G9YVhPji/view?usp=share_link)
+![AWS configure] (https://drive.google.com/file/d/1zfoIc7x_rMBtRQoGY7VWF2C4G9YVhPji/view?usp=share_link)
 ## Usage
 To use this solution to set up a highly available RDS service on AWS, follow these steps:
 
