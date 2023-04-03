@@ -1,5 +1,5 @@
 output "bastion_public_IPs" {
-  value = "Use any of this IPs to SSH into bastion hosts: ssh -A ubuntu@${join(", ssh -A ubuntu@", aws_instance.bastion[*].public_ip)}"
+  value = "Use any of these IPs to SSH into bastion hosts: ssh -A ubuntu@${join(", ssh -A ubuntu@", aws_instance.bastion[*].public_ip)}"
 }
 
 output "ec2_private_IPs" {

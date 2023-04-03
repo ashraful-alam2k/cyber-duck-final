@@ -9,7 +9,7 @@ engine                  = "aurora-mysql"
 engine_version          = "5.7.mysql_aurora.2.07.1"
 backup_retention_period = 7
 
-instance_count   = 3
+instance_count   = 1
 db_instance_type = "db.t2.medium"
 
 ingress_rules = [
