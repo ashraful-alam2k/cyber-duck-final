@@ -1,8 +1,3 @@
-resource "random_pet" "this" {
-  length    = 2
-  separator = "-"
-}
-
 resource "random_password" "password" {
   length           = var.password_length
   special          = var.password_special_chars
@@ -12,7 +7,10 @@ resource "random_password" "password" {
 # Creating a AWS secret for database master account 
 
 resource "aws_secretsmanager_secret" "cyberduckDB" {
-  name = "cyber-duck-secret-${random_pet.this.id}"
+  name = "cyber-duck-secret-v1"
+  tags = {
+    Project = "cyber-duck"
+  }
 }
 
 # Creating a AWS secret versions for database master account 
