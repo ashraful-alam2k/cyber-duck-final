@@ -18,7 +18,7 @@ resource "aws_rds_cluster" "rds_cluster" {
   skip_final_snapshot     = true
 
   vpc_security_group_ids = [aws_security_group.db_sg.id]
-  availability_zones     = data.aws_availability_zones.available.names
+  availability_zones = data.aws_availability_zones.available.names
 
   lifecycle {
     ignore_changes = [

@@ -27,4 +27,3 @@ resource "aws_security_group" "db_sg" {
     "Name" = "db_sg"
   }
 }
-

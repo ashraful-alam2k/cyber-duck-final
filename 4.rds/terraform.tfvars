@@ -3,8 +3,7 @@ name_prefix = "cyberduck"
 password_length           = 16
 password_special_chars    = true
 password_special_override = "_%@"
-# db_secret_name            = Masteraccoundb
-# db_secret_username        = adminaccount
+
 
 engine                  = "aurora-mysql"
 engine_version          = "5.7.mysql_aurora.2.07.1"

@@ -5,7 +5,7 @@ data "http" "myip" {
 data "aws_vpc" "my_vpc" {
   filter {
     name   = "tag:Name"
-    values = ["cyber-duck-vpc-1"]
+    values = ["cyber-duck-vpc"]
   }
 }
 
@@ -41,7 +41,7 @@ data "aws_rds_cluster" "rds_cluster" {
 }
 
 data "aws_secretsmanager_secret" "cyberduckDB" {
-  name = "cyber-duck-secret-definite-marlin"
+  name = "cyber-duck-secret-v32525364"
 }
 
 data "aws_secretsmanager_secret_version" "cyberduckDB" {
