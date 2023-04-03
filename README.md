@@ -42,7 +42,7 @@ To use this solution to set up a highly available RDS service on AWS, follow the
     terraform init
     # Preview the changes 
     terraform plan
-    #  If the plan looks good
+    # If the plan looks good
     terraform apply
    ```
 4. Navigate to the `get-started` folder and run terraform commands, that’ll set up S3 remote backend and DynamoDB for state locking.
@@ -69,14 +69,14 @@ To use this solution to set up a highly available RDS service on AWS, follow the
     cd ../5.final
     ```
 
-After that, enter the below commands to set up SSH agent forwarding:
+    After that, enter the below commands to set up SSH agent forwarding:
     ```
     cp ../3.services/cyber-duck-key.pem ./
     eval "$(ssh-agent -s)"
     chmod 400 cyber-duck-key.pem
     ssh-add cyber-duck-key.pem 
     ```
-Use the below commands SSH into one of the bastion hosts and from there connect the EC2 instances, afterwards connecting to MySQL.
+    Use the below commands SSH into one of the bastion hosts and from there connect the EC2 instances, afterwards connecting to MySQL.
 
     ```
     ssh -A ubuntu@<public ip of bastion>
@@ -97,7 +97,3 @@ The solution is modular, with loosely coupled folders for different functions. H
 
 ## Conclusion
 This repository provides a highly available and secure solution for setting up an RDS service on AWS for a MySQL-compatible e-commerce website. With easy-to-follow steps and modular design, users can quickly set up the service while incorporating AWS best practices for high availability and security. We hope this guide has been helpful and informative, enabling you to set up an RDS service with confidence.
-
-
-
-# cyber-duck-final
