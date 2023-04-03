@@ -65,19 +65,11 @@ To use this solution to set up a highly available RDS service on AWS, follow the
     ```
     cd ../4.rds
     ```
-8. Finally, head to the final folder and run terraform commands to create a set of bastion hosts. Upon finishing, it'll output a list of bastion hosts' public IPs, EC2 instances private IPs and command to connect to MySQL including necessary parameters like endpoint, username and password. 
+8. Finally, head to the final folder and run terraform commands to create a set of bastion hosts and setup SSH agent forwarding. Upon finishing, it'll output a list of bastion hosts' public IPs, EC2 instances private IPs and command to connect to MySQL including necessary parameters like endpoint, username and password. 
     ```
     cd ../5.final
     ```
-
-    After that, enter the below commands to set up SSH agent forwarding:
-    ```
-    cp ../3.services/cyber-duck-key.pem ./
-    eval "$(ssh-agent -s)"
-    chmod 400 cyber-duck-key.pem
-    ssh-add cyber-duck-key.pem 
-    ```
-    Use the below commands SSH into one of the bastion hosts and from there connect the EC2 instances, afterwards connecting to MySQL.
+    Use the below commands with values retrieved from output to SSH into one of the bastion hosts and from there connect the EC2 instances, afterwards connecting to MySQL.
 
     ```
     ssh -A ubuntu@<public ip of bastion>
