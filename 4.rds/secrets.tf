@@ -8,9 +8,7 @@ resource "random_password" "password" {
 
 resource "aws_secretsmanager_secret" "cyberduckDB" {
   name = "cyber-duck-secret-v1"
-  tags = {
-    Project = "cyber-duck"
-  }
+
 }
 
 # Creating a AWS secret versions for database master account 

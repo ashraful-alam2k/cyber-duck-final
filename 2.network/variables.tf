@@ -17,7 +17,3 @@ variable "db_subnet_cidr" {
   description = "CIDR blocks for database subnets"
   type        = list(string)
 }
-
-variable "region" {
-
-}
