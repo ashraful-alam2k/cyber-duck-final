@@ -2,10 +2,10 @@ terraform {
 
   backend "s3" {
     encrypt        = true
-    bucket         = "terra-state-cyber-duck"
-    dynamodb_table = "terra-state-cyber-duck"
+    bucket         = "terra-state-cyber-duckv1"
+    dynamodb_table = "terra-state-cyber-duckv1"
     key            = "cyber-duck/services/terraform.tfstate"
-    region         = "us-east-1" # You can change this variable according to your profie
+    region         = "eu-west-2" # You can change this variable according to your profie
 
   }
 

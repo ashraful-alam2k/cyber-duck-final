@@ -41,7 +41,7 @@ data "aws_rds_cluster" "rds_cluster" {
 }
 
 data "aws_secretsmanager_secret" "cyberduckDB" {
-  name = "cyber-duck-secret-v21321132"
+  name = "cyber-duck-secret-v123321"
 }
 
 data "aws_secretsmanager_secret_version" "cyberduckDB" {

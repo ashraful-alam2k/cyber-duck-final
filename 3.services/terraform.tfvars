@@ -1,5 +1,5 @@
 name_prefix    = "cyber-duck"
-image_id       = "ami-007855ac798b5175e"
+image_id       = "ami-09744628bed84e434"
 instance_type  = "t2.micro"
 device_name    = "/dev/sda1"
 volume_size    = 8

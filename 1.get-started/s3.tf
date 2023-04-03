@@ -1,6 +1,6 @@
 # creates an S3 bucket named "terra-state-cyber-duck" and applies metadata tags
 resource "aws_s3_bucket" "cyber-duck" {
-  bucket = "terra-state-cyber-duck"
+  bucket = "terra-state-cyber-duckv1"
   tags = {
     Terraform = true
     Project   = "Cyber-duck"
