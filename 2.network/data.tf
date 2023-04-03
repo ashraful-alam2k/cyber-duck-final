@@ -5,3 +5,7 @@ data "aws_availability_zones" "available" {
     values = ["*a", "*b", "*c"]
   }
 }
+
+data "aws_region" "current" {
+  current = true
+}

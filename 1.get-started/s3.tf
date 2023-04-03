@@ -11,6 +11,7 @@ resource "aws_s3_bucket" "cyber-duck" {
 
 resource "aws_s3_bucket_public_access_block" "block_public_access" {
   bucket = aws_s3_bucket.cyber-duck.id
+  # the following settings prevent public access to various aspects of the S3 bucket
   block_public_acls       = true
   block_public_policy     = true
   ignore_public_acls      = true
