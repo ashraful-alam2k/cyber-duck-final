@@ -1,9 +1,9 @@
 output "bastion_public_ips" {
-  value = "Use any of this IPs to SSH into bastion: ${join(",", aws_instance.bastion[*].public_ip)}"
+  value = "Use any of this IPs to SSH into bastion ssh -A ubuntu@${join("ssh -A ubuntu@,", aws_instance.bastion[*].public_ip)}"
 }
 
 output "ec2_private_ips" {
-  value = "Use any of these IPs to SSH into EC2 instances: ${join(",", data.aws_instances.ec2_instances.private_ips)}"
+  value = "Use any of these IPs to SSH into EC2 instances ssh ubuntu@: ${join("ssh ubuntu@,", data.aws_instances.ec2_instances.private_ips)}"
 }
 
 output "rds_connection_parameters" {
