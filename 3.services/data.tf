@@ -1,3 +1,4 @@
+# The data sources will be used later  to create AWS resources or configure them 
 data "aws_vpc" "my_vpc" {
   filter {
     name   = "tag:Name"
@@ -19,6 +20,7 @@ data "aws_subnets" "public" {
   }
 }
 
+# Retrieves public address of the machine
 data "http" "myip" {
   url = "http://ipv4.icanhazip.com"
 

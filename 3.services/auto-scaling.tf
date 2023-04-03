@@ -1,3 +1,6 @@
+# Creates an AWS autoscaling group using a specified launch template
+# It sets the minimum, desired, and maximum capacity of instances in the group,
+# as well as health check parameters and termination policies
 resource "aws_autoscaling_group" "asg" {
   launch_template {
     id      = aws_launch_template.launch_template.id

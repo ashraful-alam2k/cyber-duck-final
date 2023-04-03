@@ -1,11 +1,4 @@
-data "aws_availability_zones" "available" {
-  state = "available"
-  filter {
-    name   = "zone-name"
-    values = ["*a", "*b", "*c"]
-  }
-}
-
+# Create public subnets with internet access
 resource "aws_subnet" "public_subnet" {
   count                   = length(var.public_subnet_cidr)
   cidr_block              = var.public_subnet_cidr[count.index]
@@ -17,6 +10,7 @@ resource "aws_subnet" "public_subnet" {
   }
 }
 
+# Create private subnets without internet access
 resource "aws_subnet" "private_subnet" {
   count                   = length(var.private_subnet_cidr)
   cidr_block              = var.private_subnet_cidr[count.index]
@@ -28,6 +22,7 @@ resource "aws_subnet" "private_subnet" {
   }
 }
 
+# Create subnets for the database 
 resource "aws_subnet" "db_subnet" {
   count                   = length(var.db_subnet_cidr)
   cidr_block              = var.db_subnet_cidr[count.index]

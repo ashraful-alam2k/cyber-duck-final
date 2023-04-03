@@ -26,7 +26,8 @@ resource "aws_route_table" "db" {
   }
 }
 
-#Below are used to associate specific route tables to specific group of subnets
+# Below are used to associate specific route tables to specific group of subnets
+
 resource "aws_route_table_association" "public_web_association" {
   count = length(var.public_subnet_cidr)
 
@@ -49,12 +50,15 @@ resource "aws_route_table_association" "db_association" {
 }
 
 
-# Create the routes in each route table
+# Create a route in the route table to allow outbound traffic to the internet gateway
+
 resource "aws_route" "web_route" {
   route_table_id         = aws_route_table.web.id
   destination_cidr_block = "0.0.0.0/0"
   gateway_id             = aws_internet_gateway.igw.id
 }
+
+# Create 3 routes in the route table to allow outbound traffic to the internet, using a NAT gateway for each private subnet.
 
 resource "aws_route" "app_route" {
   count                  = 3

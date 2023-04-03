@@ -1,3 +1,4 @@
+# defines the backend configuration for storing the Terraform state filel
 terraform {
 
   backend "s3" {

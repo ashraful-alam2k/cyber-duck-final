@@ -1,3 +1,6 @@
+# Creates an AWS launch template with 
+# a bash script for installing MySQL, and AWS CLI, 
+# and configures its key, block device, and network interface settings.
 resource "aws_launch_template" "launch_template" {
   name          = "${var.name_prefix}-lt"
   image_id      = var.image_id

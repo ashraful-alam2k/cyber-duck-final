@@ -1,3 +1,4 @@
+# creates an S3 bucket named "terra-state-cyber-duck" and applies metadata tags
 resource "aws_s3_bucket" "cyber-duck" {
   bucket = "terra-state-cyber-duck"
   tags = {
@@ -6,9 +7,10 @@ resource "aws_s3_bucket" "cyber-duck" {
   }
 }
 
+# applies a public access block to the S3 bucket created in the previous block
+
 resource "aws_s3_bucket_public_access_block" "block_public_access" {
   bucket = aws_s3_bucket.cyber-duck.id
-
   block_public_acls       = true
   block_public_policy     = true
   ignore_public_acls      = true
