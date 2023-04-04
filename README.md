@@ -8,8 +8,7 @@ The following sections provide more information on the prerequisites, setup and 
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
-- [Setup](#setup)
-- [Usage](#usage)
+- [Setup and Usage](#setup and usage)
 - [Resources](#resources)
 - [Conclusion](#conclusion)
 
@@ -24,9 +23,11 @@ Let’s configure our AWS credentials
     ```
     aws configure
     ```
-    ![Screenshot 2023-04-03 110751](https://user-images.githubusercontent.com/96380861/229499918-26ec985d-56ba-42cd-b2ca-b16c94f8d678.png)
+    ![Screenshot 2023-04-04 151400](https://user-images.githubusercontent.com/96380861/229836651-ae6192fa-68dc-40c3-bfe2-fe54c77982a1.png)
 
-## Setup
+
+
+## Setup and Usage
 To use this solution to set up a highly available RDS service on AWS, follow these steps:
 
 1. Clone the repository to your local machine:
@@ -81,7 +82,7 @@ To use this solution to set up a highly available RDS service on AWS, follow the
     chmod 400 cyber-duck-key.pem 
     ssh-add cyber-duck-key.pem 
     ```
-    After that enter below commands with values retrieved from output to SSH into one of the bastion hosts and from there connect the EC2 instances, afterwards connecting to MySQL.
+    After that enter below commands with values retrieved from output to SSH into one of the bastion hosts and from there connect the EC2 instances, afterwards             connecting to MySQL.
     ```
     ssh -A ubuntu@<public ip of bastion>
     ssh ubuntu@<private ip of EC2 instance>
