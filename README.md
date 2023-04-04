@@ -8,10 +8,10 @@ The following sections provide more information on the prerequisites, setup and 
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
-- [Setup and usage](#setup and usage)
-- 
+- [Setup and usage](#setup-and-usage)
 - [Resources](#resources)
 - [Conclusion](#conclusion)
+
 
 ## Prerequisites
 Before creating all the resources, we will need to make sure that you have Terraform and AWS CLI installed on the local system. Please refer to the official Terraform and AWS documentation to learn how to install and configure the tools.
