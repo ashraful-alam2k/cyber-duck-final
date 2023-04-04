@@ -46,7 +46,6 @@ data "aws_secretsmanager_secret" "cyberduckDB" {
 
 data "aws_secretsmanager_secret_version" "cyberduckDB" {
   secret_id     = data.aws_secretsmanager_secret.cyberduckDB.id
-  version_stage = "AWSCURRENT"
 }
 
 locals {
