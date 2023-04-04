@@ -8,7 +8,7 @@ The following sections provide more information on the prerequisites, setup and 
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
-- [Setup and usage](#setup and usage)
+- [Setup_and_usage](#setup_and_usage)
 - [Resources](#resources)
 - [Conclusion](#conclusion)
 
