@@ -19,7 +19,7 @@ Before creating all the resources, we will need to make sure that we have Terraf
 - [AWS CLI](https://aws.amazon.com/cli/) 
 
 Let’s configure our AWS credentials
-- An AWS account with appropriate permissions.
+- An AWS account with appropriate permission to following resources or admin access. 
 - AWS credentials configured.
     ```
     aws configure
