@@ -13,10 +13,10 @@ The following sections provide more information on the prerequisites and usage o
 - [Conclusion](#conclusion)
 
 ## Prerequisites
-The following sections provide more information on the prerequisites and usage of our solution. Let's begin!
+The following sections provide more information on the prerequisites and usage of our solution. 
 Before creating all the resources, we will need to make sure that we have Terraform and AWS CLI installed on the local system. Please refer to the official Terraform and AWS documentation to learn how to install and configure the tools.
 - [Terraform (>= 0.13.1)](https://developer.hashicorp.com/terraform/downloads)  
-- [AWS CLI](https://aws.amazon.com/cli/) installed on your computer.
+- [AWS CLI](https://aws.amazon.com/cli/) 
 
 Let’s configure our AWS credentials
 - An AWS account with appropriate permissions.
@@ -26,7 +26,7 @@ Let’s configure our AWS credentials
     ```
     ![Screenshot 2023-04-03 110751](https://user-images.githubusercontent.com/96380861/229499918-26ec985d-56ba-42cd-b2ca-b16c94f8d678.png)
 
-## Usage
+## Setup
 To use this solution to set up a highly available RDS service on AWS, follow these steps:
 
 1. Clone the repository to your local machine:
@@ -78,8 +78,8 @@ To use this solution to set up a highly available RDS service on AWS, follow the
     ```
 
 
-## Modules
-The solution is modular, with loosely coupled folders for different functions. Here is a brief description of the modules used in this solution:
+## Resource Details
+The solution is modular, with loosely coupled folders for different functions. Here is a brief description of the resources create in this solution, They are reusable, extendable,:
 
 - `get-started`: Initializes the configuration which sets up S3 remote backend and DynamoDB for state locking.
 - `network`: Creates the VPC, subnets, internet gateway, NAT gateway, route tables, and other networking resources.
