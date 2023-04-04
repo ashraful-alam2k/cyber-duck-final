@@ -101,4 +101,4 @@ The solution is divided into loosely coupled folders for different functions to 
 
 
 ## Conclusion
-This repository provides a highly available and secure solution for setting up an RDS service on AWS for a MySQL-compatible e-commerce website. With easy-to-follow steps and modular design, users can quickly set up the service while incorporating AWS best practices for high availability and security. We hope this guide has been helpful and informative, enabling you to set up an RDS service with confidence.
+This repository provides a highly available and secure solution for setting up an RDS service on AWS for a MySQL-compatible e-commerce website. With easy-to-follow steps and loosley coupled design, users can quickly set up the service while incorporating AWS best practices for high availability and security. We hope this guide has been helpful and informative, enabling you to set up an RDS service with confidence.
